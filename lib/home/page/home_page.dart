@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:jarnama_app/app/app.dart';
+
+import 'package:jarnama_app/app_product/page/app_product_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
