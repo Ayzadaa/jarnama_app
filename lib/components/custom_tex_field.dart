@@ -9,6 +9,7 @@ class CustomTextField extends StatelessWidget {
     this.suffixIcon,
     this.onTap,
     this.maxLines,
+    this.focusNode,
   }) : super(key: key);
   final String? hinText;
   final TextEditingController? controller;
@@ -16,12 +17,14 @@ class CustomTextField extends StatelessWidget {
   final Widget? prefixIcon;
   final Widget? suffixIcon;
   final int? maxLines;
+  final FocusNode? focusNode;
 
   @override
   Widget build(BuildContext context) {
     return TextFormField(
       onTap: onTap,
       maxLines: maxLines,
+      focusNode: focusNode,
       decoration: InputDecoration(
         hintText: hinText ?? '',
         prefixIcon: prefixIcon,
