@@ -35,7 +35,8 @@ class AppProductPage extends StatelessWidget {
             CustomTextField(
               controller: _dateTime,
               hinText: 'DateTime',
-              onTap: () async {
+              focusNode: FocusNode(),
+              onTap: () {
                 showCupertinoModalPopup(
                     context: context,
                     builder: (BuildContext builder) {
